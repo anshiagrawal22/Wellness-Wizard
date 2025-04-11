@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wellness Wizard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h2>Welcome!</h2>
+  <p style="text-align: center; ">Please fill following details:</p>
+  <form id="bmiForm">
+    <label for="age">Age</label>
+    <input type="number" id="age" required>
+
+    <label for="height">Height (cm)</label>
+    <input type="number" id="height" required>
+
+    <label for="weight">Weight (kg)</label>
+    <input type="number" id="weight" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" required>
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="motive">Your Fitness Motive</label>
+    <select id="motive">
+      <option value="">--Select--</option>
+      <option value="weight loss">Weight Loss</option>
+      <option value="muscle gain">Muscle Gain</option>
+      <option value="stamina">Build Stamina</option>
+    </select>
+
+
+    <button type="submit">Calculate BMI</button>
+
+    <div class="result" id="bmiResult"></div>
+
+    <div class="workout-link" id="workoutLink">
+      <a href="workout.html">Proceed to Workout</a> <!--Place the link for workout page here-->
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
