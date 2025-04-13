@@ -33,4 +33,10 @@ Follow your plan to achieve a healthier YOU! 🌞
 Because self-care is magical, and so are you. 🌟 With Wellness-Wizard, improving your well-being has never been easier or more fun.
 
 ## 📧 Feedback & Support
-Got questions? Suggestions? Just want to say hi? Reach us at: wellness-wizard@magicmail.com 🪄
+Team Members:-
+
+Anshi Agarwal
+
+Vansh Thakral
+
+Vansh Bhatt
