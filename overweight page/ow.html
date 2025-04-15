@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Wizard | Obese </title>
+    <link rel="stylesheet" href="ow.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span>Wellness</span> Wizard
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#workouts">Workouts</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero    Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>    <label for="">Start Your Wellness Transformation</label></h1>
+            <p>Congratulations on taking the first step toward a healthier you!       </p>
+        </div>
+    </section>
+
+    <!-- Status Card -->
+    <div class="container">
+        <div class="status-card">
+            <div class="status-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 style="color: rgb(246, 103, 67);">You're in the Progress Zone!</h2>
+            <p>Your BMI suggests it's time to focus on your health. We've got expert-backed workouts and tips to help you get fitter, stronger, and feel your best.
+
+        </p>
+        </div>
+    </div>
+
+    <!-- Exercises Section -->
+    <section class="exercises-section" id="workouts">
+        <div class="container">
+            <div class="section-title">
+                <h2> Workout Plan</h2>
+                <p>Select a category to view exercises that will help you maintain your fitness level and overall health.</p>
+            </div>
+
+            <div class="exercise-tabs">
+                <button class="tab-btn active" data-category="push">Push</button>
+                <button class="tab-btn" data-category="Pull">Pull</button>
+                <button class="tab-btn" data-category="legs">Legs</button>
+                <button class="tab-btn" data-category="cardio">Cardio</button>
+            </div>
+            
+            <div class="exercise-cards" id="exercise-container">
+                <!-- Push Exercises -->
+                <div class="exercise-card" data-category="push">
+                    <div class="exercise-img">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b" alt="Push-Ups">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Push-Ups</h3>
+                        <p>A classic upper body exercise targeting the chest, shoulders, and triceps while engaging the core.</p>
+                        <div class="exercise-meta">
+                            <span>High Intensity</span>
+                            <span>15 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="push">
+                    <div class="exercise-img">
+                        <img src="https://www.spierentraining.nl/wp-content/uploads/2017/11/shoulder-press.jpg" alt="Overhead Shoulder Press">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Overhead Shoulder Press</h3>
+                        <p>Strengthens the deltoids, triceps, and upper chest, enhancing pushing power and posture.</p>
+                        <div class="exercise-meta">
+                            <span>Moderate Weight</span>
+                            <span>12 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="push">
+                    <div class="exercise-img">
+                        <img src="https://www.bodybuilding.com/images/2018/december/one-tip-to-transform-your-incline-bench-press-inset1-700xh.jpg" alt="Incline Dumbbell Press">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Incline Dumbbell Press</h3>
+                        <p>Targets the upper chest and front delts to improve pressing strength and upper body mass.</p>
+                        <div class="exercise-meta">
+                            <span>Moderate to Heavy Weight</span>
+                            <span>10 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Pull Exercises -->
+                <div class="exercise-card" data-category="Pull" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://aaptiv.com/magazine/wp-content/uploads/sites/2/2018/06/628-Tips-to-Do-More-Pull-Ups.jpg" alt="Pull-Ups">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Pull-Ups</h3>
+                        <p>A powerful upper-body move that works the lats, biceps, and shoulders for improved back strength.</p>
+                        <div class="exercise-meta">
+                            <span>High Intensity</span>
+                            <span>8-10 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="Pull" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://img.livestrong.com/640/media-storage/contentlab-data/10/7/b21c0c38860d4159bf4cee3a7ad3e179.jpg" alt="Bent-Over Rows">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Bent-Over Rows</h3>
+                        <p>Engages the upper and middle back, biceps, and rear shoulders to build pulling strength.</p>
+                        <div class="exercise-meta">
+                            <span>Moderate to Heavy Weight</span>
+                            <span>12 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="Pull" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="http://workouttrends.com/wp-content/uploads/2013/10/Cable-Face-Pull.jpg" alt="Face Pulls">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Face Pulls</h3>
+                        <p>Targets the rear delts and traps, improving posture and shoulder stability.</p>
+                        <div class="exercise-meta">
+                            <span>Light to Moderate Weight</span>
+                            <span>15 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Leg Exercises -->
+                <div class="exercise-card" data-category="legs" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.j6ZU--tvk_L3RFM5ZErb7AHaEK&pid=Api&P=0&h=180" alt="Squats">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Squats</h3>
+                        <p>Targets quads, glutes, hamstrings, and core. A compound powerhouse for building lower body strength.</p>
+                        <div class="exercise-meta">
+                            <span>Moderate to Heavy Weight</span>
+                            <span>12 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="legs" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://s32933.pcdn.co/en-SG/blog/wp-content/uploads/2020/10/Lunge-for-runners.png" alt="Lunges">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Lunges</h3>
+                        <p>Improves balance and leg coordination while toning the quads and glutes.</p>
+                        <div class="exercise-meta">
+                            <span>Bodyweight / Moderate Weight</span>
+                            <span>10 reps/leg × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="legs" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://www.verywellhealth.com/thmb/j7VjKwWAJbmzfokym1ha00BlcEU=/2251x1331/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1127801565-e1bf1dd5d0804e0fa38630cd22137d28.jpg" alt="Calf Raises">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Calf Raises</h3>
+                        <p>Strengthens and tones calves while improving ankle stability and explosive power.</p>
+                        <div class="exercise-meta">
+                            <span>Bodyweight / Light Weight</span>
+                            <span>20 reps × 3 sets</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Cardio Exercises -->
+                <div class="exercise-card" data-category="cardio" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://www.popsugar.com.au/wp-content/uploads/sites/2/2021/06/tmp_hElVGe_356ceab235afdf83_GettyImages-1249835467.jpg" alt="Interval Running">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Interval Running</h3>
+                        <p>Alternate between sprints and jogs for improved stamina and calorie burn.</p>
+                        <div class="exercise-meta">
+                            <span>High Intensity</span>
+                            <span>20-30 minutes</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="cardio" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://www.fitness-world.in/wp-content/uploads/2019/10/banner.jpg" alt="Cycling">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Cycling</h3>
+                        <p>Low-impact cardio that builds endurance and tones legs.</p>
+                        <div class="exercise-meta">
+                            <span>Moderate Intensity</span>
+                            <span>30-45 minutes</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="exercise-card" data-category="cardio" style="display: none;">
+                    <div class="exercise-img">
+                        <img src="https://images.ctfassets.net/4f3rgqwzdznj/3RmfnyzE341eFMpnueqqmv/ddf3323cd165296524fbde40095384e7/woman_girl_jumping_rope_in_park-856960322.jpg" alt="Jump Rope">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Jump Rope</h3>
+                        <p>Boosts heart rate while improving footwork, coordination, and stamina.</p>
+                        <div class="exercise-meta">
+                            <span>High Intensity</span>
+                            <span>5 rounds of 1 minute</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Wellness Tips Section -->
+    <section class="tips-section" id="nutrition">   
+        <div class="container">
+            <div class="section-title">
+                <h2>Wellness Tips for Maintenance</h2>
+                <p>Small, consistent changes make a big impact. Use these daily habits to fuel your progress!</p>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>Eat Smart</h3>
+                    <p>Prioritize veggies, lean proteins, and whole grains. Cut down on processed foods and added sugars.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>Quality Sleep</h3>
+                    <p>Aim for 7-9 hours of quality sleep nightly to allow your body to recover and maintain hormonal balance.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>Stay Hydrated</h3>
+                    <p>Sip water throughout the day to reduce hunger and keep your body running smoothly.</p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>Relax & Recharge</h3>
+                    <p>Don’t let stress stall your goals — take short breaks, breathe deeply, or move your body gently to reset.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="exercises-section" id="resources">
+        <div class="container">
+            <div class="section-title">
+                <h2>Wellness Resources</h2>
+                <p>Explore our collection of resources to enhance your wellness journey.</p>
+            </div>
+
+            <div class="exercise-cards">
+                <div class="exercise-card"> 
+                    <div class="exercise-img">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nutrition Guide">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Nutrition Guide</h3>
+                        <p>Learn about balanced eating habits and meal planning for optimal health and fitness.</p>
+                        <div class="exercise-meta">
+                            <span><a href="https://www.healthline.com/nutrition/how-to-eat-healthy-guide">Guide</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <div class="exercise-img">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Workout Plans">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Workout Plans</h3>
+                        <p>Customized workout routines for different fitness levels and goals.</p>
+                        <div class="exercise-meta">
+                            <span><a href="https://www.muscleandstrength.com/workout-routines">Plans</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exercise-card">
+                    <div class="exercise-img">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Wellness Blog">
+                    </div>
+                    <div class="exercise-content">
+                        <h3>Wellness Blog</h3>
+                        <p>Articles and tips on maintaining a healthy lifestyle and fitness routine.</p>
+                        <div class="exercise-meta">
+                            <span><a href="https://iawpwellnesscoach.com/wellness-blogs/">Articles</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Wellness Wizard</h3>
+                    <p>Helping you achieve and maintain optimal health through personalized fitness and nutrition guidance.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#workouts">Workouts</a></li>
+                        <li><a href="#nutrition">Nutrition</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.health.harvard.edu/topics/exercise-and-fitness/all" target="_blank">Fitness Articles</a></li>
+                        <li><a href="https://www.eatingwell.com/recipes/" target="_blank">Healthy Recipes</a></li>
+                        <li><a href="https://www.acefitness.org/resources/everyone/exercise-library/" target="_blank">Exercise Library</a></li>
+                        <li><a href="https://detailed.com/health-blogs/" target="_blank">Wellness Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="ow.js"></script>
+
+</body>
+</html>
