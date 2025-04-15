@@ -1,42 +1,21 @@
-# 🌟 Wellness-Wizard 🧘‍♂️✨
-Your personalized wellness companion to guide you toward a healthier and happier life!
+# Wellness Wizard 🌿🧘‍♂️  
+**Wellness Wizard** is a GUI-based wellness assistant that promotes healthier living through personalized plans. It takes user details like height, weight, and age to calculate BMI and then offers custom workout suggestions, wellness guides, and informative articles. The project follows **Kanban** and **XP** methodologies for agile, collaborative, and user-focused development.
 
-## 🛠️ What does it do?
-Wellness-Wizard is here to help! This app is designed to ask users about their:
+## ✨ Features  
+- 📋 **User Info Page**: Input height, weight, and age  
+- 📊 **BMI Calculator**: Calculates BMI and evaluates fitness level  
+- 🏋️ **Wellness Plan**: Suggests workouts, guides, and articles based on BMI  
+- 🔄 **Interactive Experience**: Updates recommendations as user data evolves
 
-🛌 Sleep habits
+## 📖 Usage  
+1. Enter your details to get started  
+2. View your BMI results  
+3. Explore personalized wellness recommendations  
 
-😊 Mood
+## 🤝 Team Project  
+Developed using agile practices — **Kanban** for workflow management and **XP** for iterative, quality-focused development.
 
-🤯 Stress levels
-
-🏃‍♂️ Activity levels
-
-...and based on this info, it generates a custom wellness plan tailored just for them! 🎯
-
-## 🌿 Features:
-🎽 Custom Workout Routines: From light stretches to sweat-it-out sessions!
-
-🧘‍♀️ Mindfulness Activities: Stay present with meditation tips and practices.
-
-💧 Hydration Goals: Water goals that'll keep you refreshed and energized.
-
-## 🚀 How it Works:
-
-Answer a few simple questions. 🎙️
-
-Let the Wizard do its magic 🪄 and whip up a personalized plan.
-
-Follow your plan to achieve a healthier YOU! 🌞
-
-## 🌈 Why Use Wellness-Wizard?
-Because self-care is magical, and so are you. 🌟 With Wellness-Wizard, improving your well-being has never been easier or more fun.
-
-## 📧 Feedback & Support
-Team Members:-
-
-Anshi Agarwal
-
-Vansh Thakral
-
-Vansh Bhatt
+**Team Members:**  
+- Anshi Agrawal  
+- Vansh Thakral  
+- Vansh Bhatt
