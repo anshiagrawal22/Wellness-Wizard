@@ -1,60 +1,44 @@
-function calculateBMI() {
-    const weight = parseFloat(document.getElementById('weight').value);
-    const heightCm = parseFloat(document.getElementById('height').value);
-    const bmiValueElement = document.getElementById('bmi-value');
-    const bmiCategoryElement = document.getElementById('bmi-category');
+let currentBMI = null;
 
-    if (isNaN(weight) || isNaN(heightCm) || weight <= 0 || heightCm <= 0) {
-        bmiValueElement.textContent = "Invalid input";
-        bmiCategoryElement.textContent = "";
+function calculateBMI() {
+    const weight = parseFloat(document.getElementById("weight").value);
+    const height = parseFloat(document.getElementById("height").value);
+    const bmiValue = document.getElementById("bmi-value");
+    const bmiCategory = document.getElementById("bmi-category");
+
+    if (!weight || !height || weight <= 0 || height <= 0) {
+        bmiValue.textContent = "--";
+        bmiCategory.textContent = "Please enter valid weight and height.";
+        currentBMI = null;
         return;
     }
 
-    const heightM = heightCm / 100;
-    const bmi = weight / (heightM * heightM);
-    bmiValueElement.textContent = bmi.toFixed(2);
+    const heightInMeters = height / 100;
+    const bmi = weight / (heightInMeters * heightInMeters);
+    currentBMI = bmi;
 
-    let category = "";
+    bmiValue.textContent = bmi.toFixed(2);
+
     if (bmi < 18.5) {
-        category = "Underweight";
+        bmiCategory.textContent = "Category: Underweight";
     } else if (bmi >= 18.5 && bmi < 25) {
-        category = "Normal weight";
-    } else if (bmi >= 25 && bmi < 30) {
-        category = "Overweight";
+        bmiCategory.textContent = "Category: Normal (Fit)";
     } else {
-        category = "Obese";
+        bmiCategory.textContent = "Category: Overweight";
     }
-
-    bmiCategoryElement.textContent = `Category: ${category}`;
-
-    // Store the BMI globally so the suggest function can use it
-    window.currentBMI = bmi;
 }
 
 function suggestGoalPlan() {
-    const bmi = window.currentBMI;
-
-    if (!bmi) {
+    if (currentBMI === null) {
         alert("Please calculate your BMI first.");
         return;
     }
 
-    let suggestionHTML = `<h3>Suggested Plan:</h3><ul>`;
- # add the links 
-    if (bmi < 18.5) {
-        suggestionHTML += `
-            <li><a href="fitness.html" target="_blank">Gain Weight Plan</a></li>`;
-    } else if (bmi < 25) {
-        suggestionHTML += `
-            <li><a href="maintain-fitness.html" target="_blank">Maintain Fitness Plan</a></li>`;
+    if (currentBMI < 18.5) {
+        window.location.href = "underweight page/index.html";
+    } else if (currentBMI >= 18.5 && currentBMI < 25) {
+        window.location.href = "fit page/Fitness.html";
     } else {
-        suggestionHTML += `
-            <li><a href="weight-loss.html" target="_blank">Weight Loss Plan</a></li>`;
+        window.location.href = "overweight page/ow.html";
     }
-
-    suggestionHTML += `</ul>`;
-
-    const suggestionDiv = document.getElementById("goal-suggestions");
-    suggestionDiv.innerHTML = suggestionHTML;
-    suggestionDiv.style.display = "block";
 }
